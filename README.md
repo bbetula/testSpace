@@ -26,8 +26,8 @@ git clone git://github.com/schacon/grit.git
 
 ```
 git add .   
-git commit -m "description"
-git push master main
+git commit -m "description" 
+git push --force master main
 ```
 
 **删除文件**
@@ -44,4 +44,6 @@ git pull master main
 ```
 
 **windows创建文件**
+```
 echo > <new_file>
+```
