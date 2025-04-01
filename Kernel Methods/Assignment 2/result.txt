@@ -1,0 +1,100 @@
+Decision_trees
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.85      0.92      0.88       250
+     Class 1       0.91      0.84      0.88       250
+
+    accuracy                           0.88       500
+   macro avg       0.88      0.88      0.88       500
+weighted avg       0.88      0.88      0.88       500
+
+Confusion Matrix:
+[[229  21]
+ [ 39 211]]
+
+AdaBoost depth=1
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.74      0.76      0.75       250
+     Class 1       0.75      0.74      0.74       250
+
+    accuracy                           0.75       500
+   macro avg       0.75      0.75      0.75       500
+weighted avg       0.75      0.75      0.75       500
+
+Confusion Matrix:
+[[189  61]
+ [ 66 184]]
+
+AdaBoost depth=3
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.97      0.97      0.97       250
+     Class 1       0.97      0.97      0.97       250
+
+    accuracy                           0.97       500
+   macro avg       0.97      0.97      0.97       500
+weighted avg       0.97      0.97      0.97       500
+
+
+Confusion Matrix:
+[[243   7]
+ [  8 242]]
+
+
+=== Linear Kernel SVM ===
+Accuracy: 0.6900
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.69      0.68      0.69       250
+     Class 1       0.69      0.70      0.69       250
+
+    accuracy                           0.69       500
+   macro avg       0.69      0.69      0.69       500
+weighted avg       0.69      0.69      0.69       500
+
+
+Confusion Matrix:
+[[171  79]
+ [ 76 174]]
+
+=== RBF Kernel SVM ===
+Accuracy: 0.9820
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.98      0.98      0.98       250
+     Class 1       0.98      0.98      0.98       250
+
+    accuracy                           0.98       500
+   macro avg       0.98      0.98      0.98       500
+weighted avg       0.98      0.98      0.98       500
+
+
+Confusion Matrix:
+[[245   5]
+ [  4 246]]
+
+=== Polynomial Kernel SVM ===
+Accuracy: 0.8660
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.80      0.98      0.88       250
+     Class 1       0.98      0.75      0.85       250
+
+    accuracy                           0.87       500
+   macro avg       0.89      0.87      0.86       500
+weighted avg       0.89      0.87      0.86       500
+
+
+Confusion Matrix:
+[[246   4]
+ [ 63 187]]

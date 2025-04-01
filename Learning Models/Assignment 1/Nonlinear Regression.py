@@ -44,9 +44,14 @@ plsq = leastsq(residuals, p0, args=(x, y))
 params = plsq[0].round(6)
 # 打印拟合曲线表达式
 print("拟合曲线为：y=",params[0],"x^3+",params[1],"x^2+",params[2],"x+",params[3],"+",params[4],"sin(",params[5],"x+",params[6],")")
+
 # 生成拟合曲线
 x_fit = np.linspace(x.min(), x.max(), 500)
 y_fit = func(params, x_fit)
+
+# 计算拟合曲线的均方误差
+train_MSE = np.sum((y - func(params, x))**2) / len(y)
+print("Nonlinear_train_MSE：",train_MSE)
 
 # 绘制原始数据和拟合曲线
 plt.scatter(x, y, label='Original Data', color='blue')

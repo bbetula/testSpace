@@ -28,9 +28,9 @@ x_test,y_test=data_preprocess(test_data)
 def print_ret(x,y,y_fit,y_test,y_test_fit,k,b,method):
     print("拟合方法为：",method)
     print("拟合曲线为：y=",k,"x+",b)
-    print("训练误差为：",np.sum((y_fit-y)**2)/len(y))
-    print("测试误差为：",np.sum((y_test_fit-y_test)**2)/len(y_test))
-    save_fit_curve(x,y,y_fit,method)
+    print("train_MSE：",np.sum((y_fit-y)**2)/len(y)) #均方误差 英文为MSE
+    print("test_MSE：",np.sum((y_test_fit-y_test)**2)/len(y_test))
+    #save_fit_curve(x,y,y_fit,method)
 #存取拟合的曲线
 def save_fit_curve(x,y,y_fit,method):
     plt.title(method)
