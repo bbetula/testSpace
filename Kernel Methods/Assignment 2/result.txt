@@ -19,7 +19,7 @@ Classification Report:
 
      Class 0       0.74      0.76      0.75       250
      Class 1       0.75      0.74      0.74       250
-
+     
     accuracy                           0.75       500
    macro avg       0.75      0.75      0.75       500
 weighted avg       0.75      0.75      0.75       500
